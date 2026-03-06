@@ -14,86 +14,157 @@
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
-
     <!-- Навигационная панель -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">MyPortfolio</a>
-            !-- Кнопка для мобильного меню -->
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Пункты меню -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Контакты</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        !-- Кнопка для мобильного меню -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Пункты меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Hero секция -->
     <div class="container-fluid bg-light py-5" id="home">
-        <div class="container text-center">
-            <h1 class="display-4">Добро пожаловать!</h1>
-            <p class="lead">Это пример сайта, созданного с помощью Bootstrap 5</p>
-            <button class="btn btn-primary btn-lg">Узнать больше</button>
-        </div>
+      <div class="container text-center">
+        <h1 class="display-4">Добро пожаловать!</h1>
+        <p class="lead">Это пример сайта, созданного с помощью Bootstrap 5</p>
+        <button class="btn btn-primary btn-lg">Узнать больше</button>
+      </div>
     </div>
 
     <!-- Секция с карточками -->
     <div class="container my-5" id="services">
-    <h2 class="text-center mb-5">Наши услуги</h2>
-    <div class="row g-4">
-    <!-- Карточка 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Веб-разработка</h5>
-            <p class="card-text"> Создаем современные адаптивные веб-сайты с использованием последних технологий и лучших практик.</p>
-            <a href="#" class="btn btn-primary">Подробнее</a>
+      <h2 class="text-center mb-5">Наши услуги</h2>
+      <div class="row g-4">
+        <!-- Карточка 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Веб-разработка</h5>
+              <p class="card-text">Создаем современные адаптивные веб-сайты с использованием последних технологий и лучших практик.</p>
+              <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
           </div>
         </div>
-      </div>
-    <!-- Карточка 2 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Мобильные приложения</h5>
-            <p class="card-text">Разрабатываем нативные и кроссплатформенные мобильные приложения для iOS и Android.</p>
-            <a href="#" class="btn btn-success">Подробнее</a>
+        <!-- Карточка 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Мобильные приложения</h5>
+              <p class="card-text">Разрабатываем нативные и кроссплатформенные мобильные приложения для iOS и Android.</p>
+              <a href="#" class="btn btn-success">Подробнее</a>
+            </div>
           </div>
         </div>
-      </div>
-    <!-- Карточка 3 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">UI/UX Дизайн</h5>
-            <p class="card-text">Проектируем интуитивные пользовательские интерфейсы с фокусом на удобство и эстетику.</p>
-            <a href="#" class="btn btn-warning">Подробнее</a>
+        <!-- Карточка 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Дизайн</h5>
+              <p class="card-text">Проектируем интуитивные пользовательские интерфейсы с фокусом на удобство и эстетику.</p>
+              <a href="#" class="btn btn-warning">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Секция с галереей изображений -->
+    <div class="container my-5">
+      <h2 class="text-center mb-5">Наши проекты</h2>
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product1.png" class="card-img-top img-fluid rounded" alt="Проект 1" />
+            <div class="card-body">
+              <h5 class="card-title">Корпоративный сайт</h5>
+              <p class="card-text text-muted">Современный сайт для IT-компании</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product2.png" class="card-img-top img-fluid rounded" alt="Проект 2" />
+            <div class="card-body">
+              <h5 class="card-title">Интернет-магазин</h5>
+              <p class="card-text text-muted">E-commerce платформа с корзиной</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product3.png" class="card-img-top img-fluid rounded" alt="Проект 3" />
+            <div class="card-body">
+              <h5 class="card-title">Мобильное приложение</h5>
+              <p class="card-text text-muted">Приложение для доставки еды</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product4.png" class="card-img-top img-fluid rounded" alt="Проект 4" />
+            <div class="card-body">
+              <h5 class="card-title">Дашборд</h5>
+              <p class="card-text text-muted">Панель управления аналитикой</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product5.png" class="card-img-top img-fluid rounded" alt="Проект 5" />
+            <div class="card-body">
+              <h5 class="card-title">Лендинг</h5>
+              <p class="card-text text-muted">Продающая страница для стартапа</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card border-0">
+            <img src="https://placeholder.apptor.studio/200/200/product6.png" class="card-img-top img-fluid rounded" alt="Проект 6" />
+            <div class="card-body">
+              <h5 class="card-title">Блог</h5>
+              <p class="card-text text-muted">Платформа для публикаций</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Секция с встроенным видео -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Посмотрите наше видео</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="ratio ratio-16x9">
+            <iframe src="#" title="Видео презентация" allowfullscreen> </iframe>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Секция с формой -->
@@ -102,116 +173,65 @@
         <div class="col-lg-6">
           <h2 class="text-center mb-4">Свяжитесь с нами</h2>
           <form id="contactForm" class="needs-validation" novalidate>
-          <!-- Имя -->
-          <div class="mb-3">
-            <label for="name" class="form-label">Имя</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Введите ваше имя"
-              required
-            />
-            <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
-          </div>
-          <!-- Email -->
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="name@example.com"
-              required
-            />
-            <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
-          </div>
-          <!-- Сообщение -->
-          <div class="mb-3">
-            <label for="message" class="form-label">Сообщение</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              placeholder="Ваше сообщение"
-              required
-            ></textarea>
+            <!-- Имя -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required />
+              <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+              <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+            </div>
+            <!-- Сообщение -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
               <div class="invalid-feedback">Пожалуйста, введите сообщение</div>
-          </div>
-          <!-- Checkbox -->
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="agree"
-              required
-            />
-            <label class="form-check-label" for="agree">Я согласен с политикой конфиденциальности</label>
-            <div class="invalid-feedback">Вы должны согласиться с условиями</div>
-          </div>
-          <!-- Кнопка отправки -->
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">Отправить сообщение</button>
-          </div>
+            </div>
+            <!-- Checkbox -->
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="agree" required />
+              <label class="form-check-label" for="agree">Я согласен с политикой конфиденциальности</label>
+              <div class="invalid-feedback">Вы должны согласиться с условиями</div>
+            </div>
+            <!-- Кнопка отправки -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Отправить сообщение</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
 
-  <!-- Секция с модальным окном и аккордеоном -->
-  <div class="container my-5">
-    <h2 class="text-center mb-5">Интерактивные компоненты</h2>
-    <div class="row">
-    <!-- Модальное окно -->
-      <div class="col-md-6 mb-4">
-        <h4>Модальное окно</h4>
-        <p>Модальные окна используются для отображения важного контента поверх страницы.</p>
-        <!-- Кнопка открытия модального окна -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          >
-          Открыть модальное окно
-        </button>
-        <!-- Само модальное окно -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
+    <!-- Секция с модальным окном и аккордеоном -->
+    <div class="container my-5">
+      <h2 class="text-center mb-5">Интерактивные компоненты</h2>
+      <div class="row">
+        <!-- Модальное окно -->
+        <div class="col-md-6 mb-4">
+          <h4>Модальное окно</h4>
+          <p>Модальные окна используются для отображения важного контента поверх страницы.</p>
+          <!-- Кнопка открытия модального окна -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Открыть модальное окно
+          </button>
+          <!-- Само модальное окно -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Добро пожаловать!
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    >
-                  </button>
+                  <h5 class="modal-title" id="exampleModalLabel">Добро пожаловать!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  Это пример модального окна Bootstrap. Здесь может быть любой
-                  контент: текст, формы, изображения.
+                  Это пример модального окна Bootstrap. Здесь может быть любой контент: текст, формы, изображения.
                 </div>
                 <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                    >
-                    Закрыть
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Сохранить изменения
-                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                  <button type="button" class="btn btn-primary">Сохранить изменения</button>
                 </div>
               </div>
             </div>
@@ -232,7 +252,7 @@
                   data-bs-target="#collapseOne"
                   aria-expanded="true"
                   aria-controls="collapseOne"
-                  >
+                >
                   Что такое Bootstrap?
                 </button>
               </h2>
@@ -241,9 +261,8 @@
                 class="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
-                >
-                <div class="accordion-body">Bootstrap — это популярный CSS-фреймворк для создания адаптивных и современных веб-сайтов.
-                </div>
+              >
+                <div class="accordion-body">Bootstrap — это популярный CSS-фреймворк для создания адаптивных и современных веб-сайтов.</div>
               </div>
             </div>
             <!-- Элемент 2 -->
@@ -256,19 +275,13 @@
                   data-bs-target="#collapseTwo"
                   aria-expanded="false"
                   aria-controls="collapseTwo"
-                  >
+                >
                   Какие преимущества Bootstrap?
                 </button>
               </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-                >
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Быстрая разработка, готовые компоненты, адаптивность,
-                  кроссбраузерность и большое сообщество разработчиков.
+                  Быстрая разработка, готовые компоненты, адаптивность, кроссбраузерность и большое сообщество разработчиков.
                 </div>
               </div>
             </div>
@@ -282,111 +295,105 @@
                   data-bs-target="#collapseThree"
                   aria-expanded="false"
                   aria-controls="collapseThree"
-                  >
+                >
                   Как подключить Bootstrap?
                 </button>
               </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-                >
-              <div class="accordion-body">
-                Bootstrap можно подключить через CDN (быстро) или установить
-                локально через npm (для продакшн-проектов).
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Bootstrap можно подключить через CDN (быстро) или установить локально через npm (для продакшн-проектов).
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Секция утилитных классов -->
-  <div class="container my-5" id="about">
-    <h2 class="text-center mb-5">О компании</h2>
-    <!-- Отступы и выравнивание -->
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <div class="p-4 bg-light rounded">
-          <h4 class="text-primary">Наша миссия</h4>
-          <p class="mb-0"> Мы создаем инновационные цифровые решения, которые помогают бизнесу расти и развиваться в современном мире.</p>
+    <!-- Секция утилитных классов -->
+    <div class="container my-5" id="about">
+      <h2 class="text-center mb-5">О компании</h2>
+      <!-- Отступы и выравнивание -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-light rounded">
+            <h4 class="text-primary">Наша миссия</h4>
+            <p class="mb-0">Мы создаем инновационные цифровые решения, которые помогают бизнесу расти и развиваться в современном мире.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <div class="p-4 bg-primary text-white rounded">
-          <h4>Наши ценности</h4>
-          <ul class="mb-0">
-            <li>Качество</li>
-            <li>Инновации</li>
-            <li>Ответственность</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Примеры утилитных классов -->
-    <div class="alert alert-info mt-4" role="alert">
-      <h5 class="alert-heading">Полезная информация!</h5>
-      <p class="mb-0"> Bootstrap предоставляет сотни утилитных классов для быстрой разработки без написания CSS.</p>
-    </div>
-    <!-- Бейджи и кнопки -->
-    <div class="text-center mt-4">
-      <span class="badge bg-primary me-2">HTML</span>
-      <span class="badge bg-success me-2">CSS</span>
-      <span class="badge bg-warning text-dark me-2">JavaScript</span>
-      <span class="badge bg-danger me-2">Bootstrap</span>
-    </div>
-    <!-- Прогресс-бары -->
-    <div class="mt-5">
-      <h5>Навыки команды</h5>
-      <div class="mb-3">
-        <label class="mb-1">Frontend Development</label>
-        <div class="progress">
-          <div
-            class="progress-bar bg-success"
-            role="progressbar"
-            style="width: 90%"
-            aria-valuenow="90"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            >
-            90%
+        <div class="col-md-6 mb-4">
+          <div class="p-4 bg-primary text-white rounded">
+            <h4>Наши ценности</h4>
+            <ul class="mb-0">
+              <li>Качество</li>
+              <li>Инновации</li>
+              <li>Ответственность</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="mb-3">
-        <label class="mb-1">Backend Development</label>
-        <div class="progress">
-          <div
-            class="progress-bar bg-info"
-            role="progressbar"
-            style="width: 85%"
-            aria-valuenow="85"
-            aria-valuemin="0"
-            aria-valuemax="100"
+      <!-- Примеры утилитных классов -->
+      <div class="alert alert-info mt-4" role="alert">
+        <h5 class="alert-heading">Полезная информация!</h5>
+        <p class="mb-0">Bootstrap предоставляет сотни утилитных классов для быстрой разработки без написания CSS.</p>
+      </div>
+      <!-- Бейджи и кнопки -->
+      <div class="text-center mt-4">
+        <span class="badge bg-primary me-2">HTML</span>
+        <span class="badge bg-success me-2">CSS</span>
+        <span class="badge bg-warning text-dark me-2">JavaScript</span>
+        <span class="badge bg-danger me-2">Bootstrap</span>
+      </div>
+      <!-- Прогресс-бары -->
+      <div class="mt-5">
+        <h5>Навыки команды</h5>
+        <div class="mb-3">
+          <label class="mb-1">Frontend Development</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
             >
-            85%
+              90%
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-3">
-        <label class="mb-1">UI/UX Design</label>
-        <div class="progress">
-          <div
-            class="progress-bar bg-warning"
-            role="progressbar"
-            style="width: 75%"
-            aria-valuenow="75"
-            aria-valuemin="0"
-            aria-valuemax="100"
+        <div class="mb-3">
+          <label class="mb-1">Backend Development</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-info"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
             >
-            75%
+              85%
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="mb-1">UI/UX Design</label>
+          <div class="progress">
+            <div
+              class="progress-bar bg-warning"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              75%
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
     <div class="container">
       <h1 class="text-center mt-5">Добро пожаловать в Bootstrap</h1>
@@ -415,48 +422,44 @@
       </div>
     </div>
 
-  <!-- Футер -->
-   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>О компании</h5>
-          <p>
-            Мы создаем современные веб-решения для вашего бизнеса с
-            использованием передовых технологий.
-          </p>
+    <!-- Футер -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>О компании</h5>
+            <p>Мы создаем современные веб-решения для вашего бизнеса с использованием передовых технологий.</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Быстрые ссылки</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home">Главная</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Контакты</h5>
+            <ul class="list-unstyled">
+              <li>Email: info@myportfolio.com</li>
+              <li>Телефон: +7 (999) 123-45-67</li>
+              <li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5>Быстрые ссылки</h5>
-          <ul class="list-unstyled">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
+        <hr style="border-color: rgba(255, 255, 255, 0.1)" />
+        <div class="text-center mt-3">
+          <p class="mb-0">&copy; 2026 MyPortfolio. Все права защищены.</p>
+          <p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5>Контакты</h5>
-        <ul class="list-unstyled">
-          <li>Email: info@myportfolio.com</li>
-          <li>Телефон: +7 (999) 123-45-67</li>
-          <li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
-        </ul>
       </div>
-    </div>
-    <hr style="border-color: rgba(255, 255, 255, 0.1)" />
-    <div class="text-center mt-3">
-      <p class="mb-0">&copy; 2026 MyPortfolio. Все права защищены.</p>
-      <p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
-    </div>
-  </div>
-</footer>
-
+    </footer>
   </body>
 
   <script>
-  // Валидация формы Bootstrap
-    (function () { 
+    // Валидация формы Bootstrap
+    (function () {
       "use strict";
       const form = document.getElementById("contactForm");
       form.addEventListener(
@@ -473,16 +476,14 @@
           }
           form.classList.add("was-validated");
         },
-        false
+        false,
       );
-      })();
+    })();
   </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-      >
-    </script>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </html>
