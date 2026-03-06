@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Эксперимент с Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Моё Портфолио</h2>
+      <!-- Кнопки фильтров -->
+      <div class="text-center mb-4">
+        <div class="btn-group" role="group">
+          <button class="btn btn-outline-primary" onclick="filterGallery('all')">Все</button>
+          <button class="btn btn-outline-primary" onclick="filterGallery('web')">Веб-дизайн</button>
+          <button class="btn btn-outline-primary" onclick="filterGallery('photo')">Фотография</button>
+          <button class="btn btn-outline-primary" onclick="filterGallery('graphics')">Графика</button>
+        </div>
+      </div>
+      <div class="row g-3" id="gallery">
+        <!-- Карточка 1 - Веб-дизайн -->
+        <div class="col-6 col-md-4 gallery-item" data-category="web">
+          <div class="card h-100">
+            <img
+              src="https://p0.zoon.ru/preview/X8eQP0T-erl0LD4Mm5s7zg/800x800x85/1/1/1/original_630cb1c64e705932fe039c74_630cb257d2ff12.00275975.jpg"
+              class="card-img-top"
+              alt="Веб-проект"
+            />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Корпоративный сайт</h6>
+              <small class="text-muted">Веб-дизайн</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 gallery-item" data-category="web">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/originals/c5/3e/52/c53e52dcbb95b4b14a897c34dfef37a5.jpg" class="card-img-top" alt="Веб-проект" />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Веб</h6>
+              <small class="text-muted">Веб-дизайн</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 gallery-item" data-category="photo">
+          <div class="card h-100">
+            <img
+              src="https://avatars.mds.yandex.net/i?id=5e87c035784a88cb5e1ca38c4604ea31_l-5204758-images-thumbs&n=13"
+              class="card-img-top"
+              alt="Веб-проект"
+            />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Фото пустыни</h6>
+              <small class="text-muted">Фото</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 gallery-item" data-category="photo">
+          <div class="card h-100">
+            <img
+              src="https://img.freepik.com/free-photo/tranquil-scene-autumn-tree-reflects-peaceful-pond-generated-by-artificial-intelligence_188544-150484.jpg?semt=ais_hybrid"
+              class="card-img-top"
+              alt="Веб-проект"
+            />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Фото леса</h6>
+              <small class="text-muted">Фото</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 gallery-item" data-category="graphics">
+          <div class="card h-100">
+            <img
+              src="https://img.freepik.com/premium-photo/close-up-cat-sleeping-home_1048944-8997024.jpg?semt=ais_hybrid&w=740"
+              class="card-img-top"
+              alt="Веб-проект"
+            />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Рисунок кота</h6>
+              <small class="text-muted">Графика</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 gallery-item" data-category="graphics">
+          <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/6a/3f/a6/6a3fa6303013f9f4db1e6b5465366a8d.jpg" class="card-img-top" alt="Веб-проект" />
+            <div class="card-body p-2">
+              <h6 class="card-title mb-0">Рисунок утки</h6>
+              <small class="text-muted">Графика</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function filterGallery(category) {
+      const items = document.querySelectorAll(".gallery-item");
+      const buttons = document.querySelectorAll(".btn-group .btn");
+      buttons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      event.target.classList.add("active");
+      items.forEach((item) => {
+        const itemCategory = item.dataset.category;
+        if (category === "all" || category === itemCategory) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    window.onload = function () {
+      document.querySelector(".btn-group .btn").classList.add("active");
+    };
+  </script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>
