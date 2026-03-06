@@ -5,3 +5,145 @@
 .card:hover {
     transform: scale(1.05);
 }
+
+/* Общие стили */
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Кастомные цвета для навбара */
+.navbar-brand {
+font-weight: bold;
+font-size: 1.5rem;
+letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #ffc107 !important;
+transition: color 0.3s ease;
+}
+
+/* Улучшение Hero-секции */
+#home {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+min-height: 400px;
+display: flex;
+align-items: center;
+}
+
+#home h1 {
+color: white;
+}
+
+#home .lead {
+color: rgba(255, 255, 255, 0.9);
+}
+
+#home .btn {
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
+}
+
+#home .btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимация для карточек */
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Стилизация кнопок */
+.btn {
+border-radius: 25px;
+padding: 10px 30px;
+font-weight: 500;
+transition: all 0.3s ease;
+}
+
+/* Улучшение формы */
+.form-control:focus {
+border-color: #667eea;
+box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Анимация для бейджей */
+.badge {
+padding: 8px 15px;
+font-size: 0.9rem;
+font-weight: 500;
+transition: transform 0.2s ease;
+}
+
+.badge:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+/* Стилизация прогресс-баров */
+.progress {
+height: 25px;
+border-radius: 15px;
+background-color: #e9ecef;
+}
+
+.progress-bar {
+border-radius: 15px;
+font-weight: bold;
+line-height: 25px;
+}
+
+/* Улучшение аккордеона */
+.accordion-button:not(.collapsed) {
+background-color: #667eea;
+color: white;
+}
+
+.accordion-button:focus {
+box-shadow: none;
+border-color: #667eea;
+}
+
+/* Футер */
+footer {
+background-color: #212529;
+color: white;
+padding: 40px 0;
+margin-top: 80px;
+}
+
+footer h5 {
+color: #ffc107;
+margin-bottom: 20px;
+}
+
+footer a {
+color: rgba(255, 255, 255, 0.7);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+footer a:hover {
+color: #ffc107;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+#home {
+min-height: 300px;
+}
+#home h1 {
+font-size: 2rem;
+}
+.card {
+margin-bottom: 20px;
+}
+}
+
