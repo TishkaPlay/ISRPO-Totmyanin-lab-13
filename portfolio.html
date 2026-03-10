@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i> MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О себе</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-3 fw-bold mb-4">Привет! Я Веб-Разработчик</h1>
+                    <p class="lead mb-4">Создаю современные и адаптивные веб-сайты с использованием передовых технологий</p>
+                    <a href="#portfolio" class="btn btn-light btn-lg me-2">Мои работы</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция О себе -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">О себе</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="https://placeholder.apptor.studio/300/300/avatar.png" alt="Avatar" class="img-fluid rounded-circle shadow">
+                </div>
+                <div class="col-md-8">
+                    <h3>Веб-разработчик и дизайнер</h3>
+                    <p class="text-muted">Я увлекаюсь созданием красивых и функциональных веб-приложений. Постоянно изучаю новые технологии и стремлюсь к совершенству в своей работе.</p>
+                    <p class="text-muted">Имею опыт работы с HTML5, CSS3, JavaScript, Bootstrap и другими современными инструментами веб-разработки.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Адаптивный дизайн</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Современные технологии</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Чистый код</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>SEO оптимизация</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Навыки -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Мои навыки</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-filetype-html display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">HTML5</h5>
+                            <p class="card-text text-muted">Создание семантической и доступной структуры веб-страниц</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-filetype-css display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">CSS3 / Bootstrap</h5>
+                            <p class="card-text text-muted">Стилизация и создание адаптивного дизайна</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="card-body">
+                            <i class="bi bi-filetype-js display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text text-muted">Интерактивность и динамическое поведение сайтов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Портфолио -->
+    <section id="portfolio" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Мои проекты</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project1.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Корпоративный сайт</h5>
+                            <p class="card-text text-muted">Современный сайт для IT-компании</p>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-success">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project2.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Интернет-магазин</h5>
+                            <p class="card-text text-muted">E-commerce платформа с корзиной</p>
+                            <span class="badge bg-primary">Bootstrap</span>
+                            <span class="badge bg-warning text-dark">JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project3.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Лендинг</h5>
+                            <p class="card-text text-muted">Продающая страница для стартапа</p>
+                            <span class="badge bg-info">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project4.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Блог</h5>
+                            <p class="card-text text-muted">Платформа для публикаций</p>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-danger">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project5.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Дашборд</h5>
+                            <p class="card-text text-muted">Панель управления аналитикой</p>
+                            <span class="badge bg-success">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="https://placeholder.apptor.studio/400/250/project6.png" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Мобильное приложение</h5>
+                            <p class="card-text text-muted">Приложение для доставки еды</p>
+                            <span class="badge bg-warning text-dark">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Свяжитесь со мной</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Пожалуйста, введите корректный email</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Пожалуйста, введите сообщение</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="bi bi-code-slash"></i> MyPortfolio</h5>
+                    <p>Создаю современные веб-решения для вашего бизнеса</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class=" text-decoration-none">Главная</a></li>
+                        <li><a href="#about" class=" text-decoration-none">О себе</a></li>
+                        <li><a href="#portfolio" class=" text-decoration-none">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Я в соцсетях</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 MyPortfolio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Custom JS -->
+    <script>
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Валидация формы
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
